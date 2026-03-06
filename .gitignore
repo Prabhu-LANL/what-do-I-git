@@ -1,0 +1,11 @@
+*.pptx
+
+# Temp files
+*.swp
+
+# NFS Files
+*.nfs*
+
+# MacOSX
+.DS_Store
+
