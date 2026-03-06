@@ -1,5 +1,5 @@
 ---                                                                             
-title: "What can I Git out of it?"
+title: "What do I Git out of it?"
 subtitle: "Git started in under an hour \n An introduction to Git for Scientists and Engineers"
 author: "Prabhu S. Khalsa"
 date: today
@@ -120,9 +120,9 @@ See
   - Git makes debugging scientific
   - Never debug the same problem again!
 - Easy scalability
-  - Solo grad student → Multi-institution collaboration
-  - Single script → Full simulation framework
-  - Short experiment → Decades long program
+  - Solo grad student &rarr; Multi-institution collaboration
+  - Single script &rarr; Full simulation framework
+  - Short experiment &rarr; Decades long program
 - Git is industry standard
   - Essential to software engineering
   - Increasingly expected for broader scientific and engineering work
@@ -137,12 +137,24 @@ See
 # Git beyond code: Applications in Science & Engineering {layout="Two Content"}
 :::: columns
 ::: column
+
+&nbsp;
+
 - Data analysis workflows
   - Track changes in Python/R/Matlab notebooks
-- Documents – use LaTeX and version control
+
+&nbsp;
+
+- Documents (html/markdown/LaTeX/etc.) + version control
   - Reports, grant proposals, lab manuals, manuscripts
+
+&nbsp;
+
 - CAD/Engineering design
   - Collaborate on configuration files or parametric scripts
+
+&nbsp;
+
 - Simulations
   - Keep track of model versions, parameters, and results
 :::
@@ -164,6 +176,10 @@ See
   - Binary files, however, are stored as sequences of bytes that do not have clear line breaks. Git:
     - Cannot show meaningful differences when you run git diff
     - Treats each version of a binary file as entirely new, even for small changes
+
+&nbsp;
+
+- Use .gitignore to ignore common binary file extensions (e.g. *.png)
 :::
 ::: column
 ![](images/binary_data.png)
@@ -189,8 +205,8 @@ It's not just a software development tool, it is a ...
 :::: columns
 ::: column
 
-- Repository (repo): a tracked project folder
-- Commit: a snapshot of changes
+- Repository (repo): a tracked project folder\
+- Commit: a snapshot of changes\
 - Branch: a parallel line of development
 
 :::
@@ -211,14 +227,14 @@ back into the binder
 | Action          | Command                   | Description                         |
 |:----------------|:--------------------------|:------------------------------------|
 | Initialize repo | *git init*                | Start tracking current directory    |
-| Clone a repo    | *git clone <URL>*         | Download an existing repo           |
+| Clone a repo    | *git clone \<URL\>*       | Clone an existing repo              |
 | Check status    | *git status*              | See current state of repo           |
-| Add files       | *git add <file>*          | Stage changes for commit            |
+| Add files       | *git add \<file\>*        | Stage changes for commit            |
 | Commit changes  | *git commit -m "Message"* | Save a snapshot with a message      |
 | View history    | *git log*                 | See previous commits                |
-| Create a branch | *git branch <name>*       | Make a new branch                   |
-| Switch branches | *git checkout <name>*     | Move to another branch              |
-| Merge branches  | *git merge <name>*        | Merge other branch into current one |
+| Create a branch | *git branch \<name\>*     | Make a new branch                   |
+| Switch branches | *git checkout \<name\>*   | Move to another branch              |
+| Merge branches  | *git merge \<name\>*      | Merge other branch into current one |
 | Push to remote  | *git push*                | Upload changes to GitHub/GitLab     |
 | Pull updates    | *git pull*                | Download updates from remote repo   |
 
@@ -227,7 +243,7 @@ back into the binder
 # Typical workflow in collaborative project {layout="Content with Caption"}
 
 - Clone Repository - brings the repository into your working directory
-- Create Branch - space to do your work before merging back into the original repository
+- Create Branch - space to do your work before merging back into the main branch
 - Add and Commit changes - staging and committing your work with meaningful messages about changes
 - (optionally) rebase or merge - incorporate changes/updates of parent branch into your branch
 - Push - push your local branch to one of your remotes to backup your branch
@@ -245,6 +261,7 @@ back into the binder
   - Visualizing differences between versions
   - Managing issues and project tasks
   - Collaborating asynchronously
+  - CI/CD - continuous integration/continuous deployment
 
 :::
 ::: column
@@ -253,7 +270,7 @@ back into the binder
 ::::
 
 <!-- slide 14 -->
-# Beyond the command line {layout="Two Content"}
+# Tips for adopting Git in scientific work {layout="Two Content"}
 :::: columns
 ::: column
 
@@ -280,16 +297,20 @@ https://swcarpentry.github.io/git-novice/
 :::
 
 <!-- slide 15 -->
-# Beyond the command line {layout="Two Content"}
+# Conclusion {layout="Two Content"}
 :::: columns
 ::: column
 
-- Git is a lightweight, powerful “Scientific Integrity” tool that
-  - Provides
-    - Reproducibility + Safety + Collaboration
+- Git is a lightweight, powerful “Scientific Integrity” tool
+  - Reproducibility + Safety + Collaboration
+    - Complete history of every change
     - Collaboration without chaos
-  - Allows for experimentation
-  - Grows with your project
+    - Allows for experimentation
+    - Grows with your project
+  - Professional work that's easy to scale and to recover
+
+&nbsp;
+
 - Whether you're writing code, papers, or setting up experimental workflows, Git will make your work more robust and future-proof
 
 :::
