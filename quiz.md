@@ -55,3 +55,20 @@ Hint: One of the reasons to use git is to have a log that allows you to not
 Answer: git commit -m "If committed this change will..."
 :::
 
+<!-- slide 5 -->
+# What git command shows us the history of the repository?
+:::: columns
+::: column
+\
+\
+Hint: Your mileage may vary, but you’ll go farther if you remember to
+“_____ an entry into the _____book”
+:::
+::: column
+![](images/git_log.png)
+:::
+::::
+::: notes
+Answer: git log
+:::
+
