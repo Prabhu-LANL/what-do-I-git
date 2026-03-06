@@ -14,7 +14,7 @@ Hint: It will report on the current state of the repo
 "Can you give us a quick _____ update?"
 :::
 ::: column
-![](images/git_status.png)
+![](docs/images/git_status.png)
 :::
 ::::
 ::: notes
@@ -31,7 +31,7 @@ Hint: You've got a stack of papers on your desk and somebody brings you another
 "Just _____ it to the pile"
 :::
 ::: column
-![](images/git_add.png)
+![](docs/images/git_add.png)
 :::
 ::::
 ::: notes
@@ -48,7 +48,7 @@ Hint: One of the reasons to use git is to have a log that allows you to not
 “_____ everything to memory”
 :::
 ::: column
-![](images/git_commit.png)
+![](docs/images/git_commit.png)
 :::
 ::::
 ::: notes
@@ -65,7 +65,7 @@ Hint: Your mileage may vary, but you’ll go farther if you remember to
 “_____ an entry into the _____book”
 :::
 ::: column
-![](images/git_log.png)
+![](docs/images/git_log.png)
 :::
 ::::
 ::: notes
