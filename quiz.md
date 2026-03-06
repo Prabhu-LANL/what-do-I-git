@@ -11,6 +11,7 @@ date: today
 \
 \
 Hint: It will report on the current state of the repo
+"Can you give us a quick _____ update?"
 :::
 ::: column
 ![](images/git_status.png)
@@ -26,8 +27,8 @@ Answer: git status
 ::: column
 \
 \
-Hint: You've got a stack of papers in your repository and somebody brings you another.
-"___ it to the pile"
+Hint: You've got a stack of papers on your desk and somebody brings you another
+"Just _____ it to the pile"
 :::
 ::: column
 ![](images/git_add.png)
@@ -35,5 +36,22 @@ Hint: You've got a stack of papers in your repository and somebody brings you an
 ::::
 ::: notes
 Answer: git add
+:::
+
+<!-- slide 4 -->
+# What git command saves a snapshot of the changes and is paired with a message for the log?
+:::: columns
+::: column
+\
+\
+Hint: One of the reasons to use git is to have a log that allows you to not
+“_____ everything to memory”
+:::
+::: column
+![](images/git_commit.png)
+:::
+::::
+::: notes
+Answer: git commit -m "If committed this change will..."
 :::
 
