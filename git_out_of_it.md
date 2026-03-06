@@ -28,7 +28,7 @@ See
 - How easily you can start
 :::
 ::: column
-![A scientific Integrity Tool](images/laboratory_notebook_integrity.png)
+![A scientific Integrity Tool](docs/images/laboratory_notebook_integrity.png)
 :::
 ::::
 
@@ -53,7 +53,7 @@ See
   - Easy Scalability
 :::
 ::: column
-![You - an hour from now](images/wizards.png)
+![You - an hour from now](docs/images/wizards.png)
 :::
 ::::
 
@@ -79,7 +79,7 @@ See
   - clear, time-stamped, documented revisions
 :::
 ::: column
-![git clone](images/reproducibility.png)
+![](docs/images/reproducibility.png)
 :::
 ::::
 
@@ -103,7 +103,7 @@ See
 
 :::
 ::: column
-![](images/safety.png)
+![](docs/images/safety.png)
 :::
 ::::
 
@@ -129,7 +129,7 @@ See
 
 :::
 ::: column
-![](images/professional_work.png)
+![](docs/images/professional_work.png)
 :::
 ::::
 
@@ -159,7 +159,7 @@ See
   - Keep track of model versions, parameters, and results
 :::
 ::: column
-![](images/LaTeX.png)
+![](docs/images/LaTeX.png)
 :::
 ::::
 
@@ -182,7 +182,7 @@ See
 - Use .gitignore to ignore common binary file extensions (e.g. *.png)
 :::
 ::: column
-![](images/binary_data.png)
+![](docs/images/binary_data.png)
 :::
 ::::
 ::: notes
@@ -196,7 +196,7 @@ Small binary files are fine, they will simply be replaced when they are changed
 It's not just a software development tool, it is a ...
 :::
 ::: column
-![Scientific _______ tool](images/question_mark.png)
+![Scientific _______ tool](docs/images/question_mark.png)
 :::
 ::::
 
@@ -212,7 +212,7 @@ It's not just a software development tool, it is a ...
 :::
 ::: column
 
-![](images/Physical_Repository.png){width=100%}
+![](docs/images/Physical_Repository.png){width=100%}
 :::
 ::::
 
@@ -249,7 +249,7 @@ back into the binder
 - Push - push your local branch to one of your remotes to backup your branch
 - Merge - When development has completed, after review, merge your branch into the main upstream development branch
 
-![](images/branching.png)
+![](docs/images/branching.png)
 
 <!-- slide 13 -->
 # Beyond the command line {layout="Two Content"}
@@ -265,7 +265,7 @@ back into the binder
 
 :::
 ::: column
-![](images/github.png){width=100%}
+![](docs/images/github.png){width=100%}
 :::
 ::::
 
@@ -289,7 +289,7 @@ back into the binder
 
 :::
 ::: column
-![](images/easy_button.png)
+![](docs/images/easy_button.png)
 :::
 ::::
 ::: notes
@@ -315,7 +315,7 @@ https://swcarpentry.github.io/git-novice/
 
 :::
 ::: column
-![](images/git_superhero.png)
+![](docs/images/git_superhero.png)
 :::
 ::::
 
