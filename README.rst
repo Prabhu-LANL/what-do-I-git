@@ -1,4 +1,4 @@
-.. target-start-do-not-remove
+.. target-start
 
 .. _pandoc: https://pandoc.org/index.html
 .. _conda-forge: https://conda-forge.org/
@@ -8,7 +8,7 @@
 
 .. _`Prabhu Khalsa`: prabhu@lanl.gov
 
-.. target-end-do-not-remove
+.. target-end
 
 ###############
 Git Talk Slides
@@ -19,13 +19,18 @@ Git Talk Slides
 Project Description
 *******************
 
+.. project-description-start
+
 A presentation for introducing scientists and engineers to git. This talk is designed to be given with a short practicum and meant to be done all in under an hour.
 
 There are images and a markdown file for turning some content into a powerpoint slide deck.
 
+.. project-description-end
 
 Information
 ===========
+
+.. project-information-start
 
 There are two markdown files, each of which can be converted to a powerpoint slide deck. One file has the main talk. Another is a short quiz.
 
@@ -33,16 +38,19 @@ There are two markdown files, each of which can be converted to a powerpoint sli
 
 To learn git more thoroughly, please visit `Software Carpentry`_'s `git novice`_ lesson.
 
+.. project-information-end
+
 Author Info
 ===========
 
 * `Prabhu Khalsa`_
 
 
-
 ***********
 Quick Start
 ***********
+
+.. quick-start-start
 
 To convert the content into a slide deck, you must first have a powerpoint template and an installation of `pandoc`_ available. This repository includes a sample template.
 
@@ -61,3 +69,5 @@ The conversion command is as follows
       $ pandoc git_out_of_it.md -t pptx --reference-doc=template.pptx -o git_out_of_it.pptx -f markdown+hard_line_breaks
       $ pandoc quiz.md -t pptx --reference-doc=template.pptx -o quiz.pptx -f markdown+hard_line_breaks
 
+
+.. quick-start-end
