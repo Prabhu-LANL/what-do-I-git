@@ -46,7 +46,8 @@
 <body>
   <h1>Information</h1>
   <div>
-  {{ include "info.md" | markdownify }}
+  {% capture info_content %}{% include info.md %}{% endcapture %}
+  {{ info_content | markdownify }}
   </div>
   <ul>
     <li><a href="slides.html">slides</a></li>
