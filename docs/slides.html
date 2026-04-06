@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Slide Viewer</title>
+  <link rel="stylesheet" href="theme.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="embed_slides.js" defer></script>
+  <script src="slides.js" defer></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="sub">
+        Use <span class="kbd">←</span>/<span class="kbd">→</span> to navigate,
+        <span class="kbd">F</span> for fullscreen,
+        <span class="kbd">N</span> for notes.
+      </p>
+    </header>
+
+    <section class="deck" aria-label="Slide deck viewer">
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <div class="title-mini" id="deckTitle">Slide Deck</div>
+          <div class="progress" id="progressText">1 / 1</div>
+        </div>
+
+        <div class="toolbar-actions">
+          <button class="btn" id="toggleNotesBtn" type="button">Notes</button>
+          <button class="btn" id="fullscreenBtn" type="button">Fullscreen</button>
+          <button class="btn" id="prevBtn" type="button">Previous</button>
+          <button class="btn" id="nextBtn" type="button">Next</button>
+        </div>
+      </div>
+
+      <div class="stage" id="stage">
+        <button class="nav-arrow nav-left" id="arrowLeft" type="button" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+
+        <div class="slide-frame" id="slideFrame">
+          <div class="slide slide-enter" id="slideViewport"></div>
+        </div>
+
+        <button class="nav-arrow nav-right" id="arrowRight" type="button" aria-label="Next slide">
+          <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+
+      <aside class="notes-panel" id="notesPanel" aria-live="polite">
+        <div class="notes-header">Speaker Notes</div>
+        <div class="notes-body" id="notesViewport">
+          <p class="notes-empty">No notes for this slide.</p>
+        </div>
+      </aside>
+    </section>
+
+    <div id="sourceSlides" class="source-slides"></div>
+  </div>
+</body>
+</html>
