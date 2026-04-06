@@ -5,6 +5,8 @@
 .. _Documentation: https://github.com/Prabhu-LANL/what-do-I-git
 .. _`git novice`: https://swcarpentry.github.io/git-novice/
 .. _`Software Carpentry`: https://software-carpentry.org/
+.. _`main slides`: https://prabhu-lanl.github.io/what-do-I-git/slides.html
+.. _`quiz`: https://prabhu-lanl.github.io/what-do-I-git/quiz.html
 
 .. _`Prabhu Khalsa`: prabhu@lanl.gov
 
@@ -71,3 +73,14 @@ The conversion command is as follows
 
 
 .. quick-start-end
+
+*****************************
+HTML Rendering of slide decks
+*****************************
+
+.. html-render-start
+
+* `main slides`_
+* `quiz`_
+
+.. html-render-end
