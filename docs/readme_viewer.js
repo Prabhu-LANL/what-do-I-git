@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (!container) return;
 
   try {
-    const response = await fetch("../README.rst", { cache: "no-store" });
+//    const response = await fetch("../README.rst", { cache: "no-store" });
+    const response = await fetch("https://raw.githubusercontent.com/Prabhu-LANL/what-do-I-git/refs/heads/main/README.rst", { cache: "no-store" });
     if (!response.ok) {
       throw new Error(`Failed to load README.rst: ${response.status} ${response.statusText}`);
     }
