@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", async () => {
-  await loadSlidesFromMarkdownUrl("../git_out_of_it.md", {
+  await loadSlidesFromMarkdownUrl("https://raw.githubusercontent.com/Prabhu-LANL/what-do-I-git/refs/heads/main/git_out_of_it.md", {
     containerId: "sourceSlides"
   });
 
