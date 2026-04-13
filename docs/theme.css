@@ -86,6 +86,10 @@ h1{
   background: linear-gradient(135deg, var(--brand), var(--brand2));
 }
 
+#readme-content{
+  padding:15px 0px 0px 20px;
+}
+
 /* ===== DECK ===== */
 
 .deck{
