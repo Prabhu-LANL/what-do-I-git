@@ -199,6 +199,9 @@ It's not just a software development tool, it is a ...
 ![Scientific _______ tool](docs/images/question_mark.png)
 :::
 ::::
+::: notes
+A scientific integrity tool
+:::
 
 <!-- slide 10 -->
 # Key Git Concepts {layout="Two Content"}
