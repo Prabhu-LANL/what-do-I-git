@@ -1,16 +1,17 @@
 window.addEventListener("DOMContentLoaded", async () => {
-  await loadSlidesFromMarkdownUrl("https://raw.githubusercontent.com/Prabhu-LANL/what-do-I-git/refs/heads/main/git_out_of_it.md", {
+  const markdownFile = document.body.dataset.markdown || "slides.md";
+
+  await loadSlidesFromMarkdownUrl(markdownFile, {
     containerId: "sourceSlides"
   });
 
-  const sources = Array.from(document.querySelectorAll("#sourceSlides .source-slide"));
+  const sources = Array.from(
+    document.querySelectorAll("#sourceSlides .source-slide")
+  );
 
   const viewport = document.getElementById("slideViewport");
   const notesViewport = document.getElementById("notesViewport");
   const notesPanel = document.getElementById("notesPanel");
-  const slideFrame = document.getElementById("slideFrame");
-  const stage = document.getElementById("stage");
-
   const progressText = document.getElementById("progressText");
   const deckTitle = document.getElementById("deckTitle");
 
@@ -28,7 +29,8 @@ window.addEventListener("DOMContentLoaded", async () => {
   function updateControls() {
     const total = sources.length;
     progressText.textContent = `${idx + 1} / ${total}`;
-    deckTitle.textContent = sources[idx]?.dataset?.title || `Slide ${idx + 1}`;
+    deckTitle.textContent =
+      sources[idx]?.dataset?.title || `Slide ${idx + 1}`;
 
     const atStart = idx === 0;
     const atEnd = idx === total - 1;
@@ -64,6 +66,8 @@ window.addEventListener("DOMContentLoaded", async () => {
   }
 
   function renderNotes(html) {
+    if (!notesViewport) return;
+
     if (html && html.trim()) {
       notesViewport.innerHTML = html;
     } else {
@@ -71,23 +75,9 @@ window.addEventListener("DOMContentLoaded", async () => {
     }
   }
 
-  function applyAutoScale() {
-    viewport.classList.remove("scale-sm", "scale-xs");
-
-    const maxHeight = viewport.clientHeight;
-    const contentHeight = viewport.scrollHeight;
-
-    if (contentHeight > maxHeight * 1.08) {
-      viewport.classList.add("scale-sm");
-    }
-
-    if (viewport.scrollHeight > maxHeight * 1.08) {
-      viewport.classList.remove("scale-sm");
-      viewport.classList.add("scale-xs");
-    }
-  }
-
   function setNotesVisible(visible) {
+    if (!notesPanel || !toggleNotesBtn) return;
+
     notesVisible = visible;
     notesPanel.classList.toggle("show-notes", visible);
     toggleNotesBtn.classList.toggle("btn-active", visible);
@@ -105,7 +95,13 @@ window.addEventListener("DOMContentLoaded", async () => {
     const exitClass = direction === "left" ? "slide-exit-right" : "slide-exit-left";
     const enterClass = direction === "left" ? "slide-enter-left" : "slide-enter-right";
 
-    viewport.classList.remove("slide-enter", "slide-enter-left", "slide-enter-right", "slide-exit-left", "slide-exit-right");
+    viewport.classList.remove(
+      "slide-enter",
+      "slide-enter-left",
+      "slide-enter-right",
+      "slide-exit-left",
+      "slide-exit-right"
+    );
     viewport.classList.add(exitClass);
 
     window.setTimeout(() => {
@@ -123,7 +119,6 @@ window.addEventListener("DOMContentLoaded", async () => {
         requestAnimationFrame(() => {
           viewport.classList.remove(enterClass);
           viewport.classList.add("slide-enter");
-          applyAutoScale();
         });
       });
 
@@ -145,10 +140,10 @@ window.addEventListener("DOMContentLoaded", async () => {
     try {
       if (!document.fullscreenElement) {
         await document.documentElement.requestFullscreen();
-        fullscreenBtn.classList.add("btn-active");
+        if (fullscreenBtn) fullscreenBtn.classList.add("btn-active");
       } else {
         await document.exitFullscreen();
-        fullscreenBtn.classList.remove("btn-active");
+        if (fullscreenBtn) fullscreenBtn.classList.remove("btn-active");
       }
     } catch (err) {
       console.error("Fullscreen error:", err);
@@ -156,17 +151,20 @@ window.addEventListener("DOMContentLoaded", async () => {
   }
 
   function updateFullscreenButton() {
+    if (!fullscreenBtn) return;
     const active = !!document.fullscreenElement;
     fullscreenBtn.classList.toggle("btn-active", active);
     fullscreenBtn.setAttribute("aria-pressed", String(active));
   }
 
-  prevBtn.addEventListener("click", prev);
-  nextBtn.addEventListener("click", next);
-  arrowLeft.addEventListener("click", prev);
-  arrowRight.addEventListener("click", next);
-  fullscreenBtn.addEventListener("click", toggleFullscreen);
-  toggleNotesBtn.addEventListener("click", () => setNotesVisible(!notesVisible));
+  if (prevBtn) prevBtn.addEventListener("click", prev);
+  if (nextBtn) nextBtn.addEventListener("click", next);
+  if (arrowLeft) arrowLeft.addEventListener("click", prev);
+  if (arrowRight) arrowRight.addEventListener("click", next);
+  if (fullscreenBtn) fullscreenBtn.addEventListener("click", toggleFullscreen);
+  if (toggleNotesBtn) {
+    toggleNotesBtn.addEventListener("click", () => setNotesVisible(!notesVisible));
+  }
 
   document.addEventListener("fullscreenchange", updateFullscreenButton);
 
@@ -189,8 +187,10 @@ window.addEventListener("DOMContentLoaded", async () => {
     }
 
     if (e.key === "n" || e.key === "N") {
-      e.preventDefault();
-      setNotesVisible(!notesVisible);
+      if (notesPanel && toggleNotesBtn) {
+        e.preventDefault();
+        setNotesVisible(!notesVisible);
+      }
     }
 
     if (e.key === "Escape" && notesVisible) {
@@ -198,19 +198,16 @@ window.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
-  window.addEventListener("resize", () => {
-    applyAutoScale();
-  });
-
   if (sources.length > 0) {
     const { body, notes } = getSlideContent(0);
     viewport.innerHTML = body;
     renderNotes(notes);
     updateControls();
-    applyAutoScale();
   } else {
-    viewport.innerHTML = "<h2>No slides found</h2>";
-    notesViewport.innerHTML = `<p class="notes-empty">No notes for this slide.</p>`;
+    viewport.innerHTML = `<h2>No slides found</h2><p>Could not load <code>${markdownFile}</code>.</p>`;
+    if (notesViewport) {
+      notesViewport.innerHTML = `<p class="notes-empty">No notes for this slide.</p>`;
+    }
     updateControls();
   }
 });
