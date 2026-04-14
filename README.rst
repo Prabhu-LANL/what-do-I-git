@@ -7,6 +7,7 @@
 .. _`Software Carpentry`: https://software-carpentry.org/
 .. _`main slides`: https://prabhu-lanl.github.io/what-do-I-git/slides.html
 .. _`quiz`: https://prabhu-lanl.github.io/what-do-I-git/quiz.html
+.. _`pracitcum`: https://prabhu-lanl.github.io/what-do-I-git/practicum.html
 
 .. _`Prabhu Khalsa`: prabhu@lanl.gov
 
@@ -82,5 +83,6 @@ HTML Rendering of slide decks
 
 * `main slides`_
 * `quiz`_
+* `practicum`_
 
 .. html-render-end
