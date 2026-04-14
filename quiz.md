@@ -44,8 +44,8 @@ Answer: git add
 ::: column
 \
 \
-Hint: One of the reasons to use git is to have a log that allows you to not
-“_____ everything to memory”
+Hint: Without a git log, to remember each change, you'd have to
+“_____ it to memory”
 :::
 ::: column
 ![](docs/images/git_commit.png)
@@ -62,7 +62,7 @@ Answer: git commit -m "If committed this change will..."
 \
 \
 Hint: Your mileage may vary, but you’ll go farther if you remember to
-“_____ an entry into the _____book”
+“_____ an entry into the record”
 :::
 ::: column
 ![](docs/images/git_log.png)
