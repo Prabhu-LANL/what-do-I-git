@@ -26,9 +26,21 @@ Project Description
 
 A presentation for introducing scientists and engineers to git. This talk is designed to be given with a short practicum and meant to be done all in under an hour.
 
-There are images and a markdown file for turning some content into a powerpoint slide deck.
+There are images, a slide template, and a markdown file for turning the main content into a powerpoint slide deck. The practicum and quiz can also be rendered as a powerpoint slide deck. Additionally there are html renderings of the content so that the talk can be given from a browser if desired.
+
+An abstract is provided to be used when scheduling or otherwise describing the talk.
 
 .. project-description-end
+
+********
+Abstract
+********
+
+.. abstract-start
+
+What do I git out of it? This introductory talk provides scientists and engineers with a practical overview of Git and modern version control concepts, focusing on how Git supports reproducibility, collaboration, traceability, and safe experimentation in technical and research environments. Rather than treating Git as a tool only for software developers, the presentation demonstrates how version control can improve workflows for simulations, data analysis, documentation, manuscripts, configuration files, and long-running engineering or scientific projects. Attendees will learn the core ideas behind repositories, commits, staging, branching, merging, and synchronization, along with the most important commands needed to begin using Git effectively. The talk also introduces common collaboration workflows, discusses limitations such as handling binary files, and highlights best practices for organizing changes into meaningful, reproducible project history.
+
+.. abstract-end
 
 Information
 ===========
