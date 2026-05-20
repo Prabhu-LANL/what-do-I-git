@@ -289,6 +289,7 @@ back into the binder
 - Backup to remote
   - Use GitHub or GitLab to avoid local data loss
 - Check out software carpentry’s git lessons
+- Check out visual learning tools (oh my git, learn git branching, etc.)
 
 :::
 ::: column
@@ -297,6 +298,8 @@ back into the binder
 ::::
 ::: notes
 https://swcarpentry.github.io/git-novice/  
+https://ohmygit.org/
+https://learngitbranching.js.org/
 :::
 
 <!-- slide 15 -->
