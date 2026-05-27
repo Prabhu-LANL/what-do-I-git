@@ -5,6 +5,8 @@
 .. _Documentation: https://github.com/Prabhu-LANL/what-do-I-git
 .. _`git novice`: https://swcarpentry.github.io/git-novice/
 .. _`Software Carpentry`: https://software-carpentry.org/
+.. _`Learn Git Branching`: https://learngitbranching.js.org/
+.. _`Oh My Git`: https://ohmygit.org/
 .. _`main slides`: https://prabhu-lanl.github.io/what-do-I-git/slides.html
 .. _`quiz`: https://prabhu-lanl.github.io/what-do-I-git/quiz.html
 .. _`practicum`: https://prabhu-lanl.github.io/what-do-I-git/practicum.html
@@ -52,6 +54,9 @@ There are two markdown files, each of which can be converted to a powerpoint sli
 * `Documentation`_: This readme file
 
 To learn git more thoroughly, please visit `Software Carpentry`_'s `git novice`_ lesson.
+For a visual learning tool see `Learn Git Branching`_.
+If you'd like to learn by playing a game, visit `Oh My Git`_.
+
 
 .. project-information-end
 
