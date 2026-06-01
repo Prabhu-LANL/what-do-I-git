@@ -171,6 +171,7 @@ Scientific and Engineering integrity require
 :::
 ::::
 
+
 <!-- slide 8 -->
 # What NOT to put in Git {layout="Two Content"}
 :::: columns
@@ -198,6 +199,34 @@ Small binary files are fine, they will simply be replaced when they are changed
 :::
 
 <!-- slide 9 -->
+# What does it cost me to Git these benefits? {layout="Two Content"}
+:::: columns
+::: column
+
+&nbsp;
+
+- Thinking
+  - Remember the benefits - scientific integrity
+  - Likely to start thinking of our beloved binary file formats in terms of "text-based inputs" and the actions needed to re-create them
+  - Likely to eventually memorize the most commonly used commands
+
+&nbsp;
+
+- Habit forming - What you put in you'll Git out
+  - Small, frequent commits!
+  - Meaningful commit messages!
+
+&nbsp;
+
+- Expense
+  - Git is free and open-source
+:::
+::: column
+![](docs/images/git_cost.png)
+:::
+::::
+
+<!-- slide 10 -->
 # So what is Git? {layout="Two Content"}
 :::: columns
 ::: column
@@ -211,7 +240,7 @@ It's not just a software development tool, it is a ...
 A scientific integrity tool
 :::
 
-<!-- slide 10 -->
+<!-- slide 11 -->
 # Key Git Concepts {layout="Two Content"}
 :::: columns
 ::: column
@@ -233,7 +262,7 @@ the notebook is the Git log with a new entry after the paper has been added
 back into the binder
 :::
 
-<!-- slide 11 -->
+<!-- slide 12 -->
 # Essential Git Commands {layout="Title and Content"}
 | Action          | Command                   | Description                         |
 |:----------------|:--------------------------|:------------------------------------|
@@ -250,7 +279,7 @@ back into the binder
 | Pull updates    | *git pull*                | Download updates from remote repo   |
 
 
-<!-- slide 12 -->
+<!-- slide 13 -->
 # Typical workflow in collaborative project {layout="Content with Caption"}
 
 - Clone Repository - brings the repository into your working directory
@@ -262,7 +291,7 @@ back into the binder
 
 ![](docs/images/branching.png)
 
-<!-- slide 13 -->
+<!-- slide 14 -->
 # Beyond the command line {layout="Two Content"}
 :::: columns
 ::: column
@@ -280,7 +309,7 @@ back into the binder
 :::
 ::::
 
-<!-- slide 14 -->
+<!-- slide 15 -->
 # Tips for adopting Git in scientific work {layout="Two Content"}
 :::: columns
 ::: column
@@ -310,7 +339,7 @@ https://ohmygit.org/
 https://learngitbranching.js.org/
 :::
 
-<!-- slide 15 -->
+<!-- slide 16 -->
 # Conclusion {layout="Two Content"}
 :::: columns
 ::: column
