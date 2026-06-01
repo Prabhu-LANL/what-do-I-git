@@ -87,7 +87,13 @@ The conversion command is as follows
    .. code-block::
 
       $ pandoc git_out_of_it.md -t pptx --reference-doc=template.pptx -o git_out_of_it.pptx -f markdown+hard_line_breaks
+
+For the other markdown files, the commands are essentially the same
+
+   .. code-block::
+
       $ pandoc quiz.md -t pptx --reference-doc=template.pptx -o quiz.pptx -f markdown+hard_line_breaks
+      $ pandoc practicum.md -t pptx --reference-doc=template.pptx -o practicum.pptx -f markdown+hard_line_breaks
 
 
 .. quick-start-end
