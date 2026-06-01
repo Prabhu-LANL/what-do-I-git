@@ -10,7 +10,7 @@ date: today
 :::: columns
 ::: column
 
-Imagine
+First let's imagine
 
 - A laboratory notebook whose pages can come alive to
 - Move forward and backward in time
@@ -21,7 +21,7 @@ Imagine
 - Invite you to experiment without negative consequences
 - Duplicate itself just for you
 
-See
+Now let's see
 
 - Why git is important
 - Why you should use it
@@ -31,6 +31,9 @@ See
 ![A scientific Integrity Tool](docs/images/laboratory_notebook_integrity.png)
 :::
 ::::
+::: notes
+Git is not just a software development tool, it is a scientific integrity tool
+:::
 
 <!-- slide 3 -->
 # Git is powerful (and so can you!) {layout="Two Content"}
