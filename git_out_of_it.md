@@ -352,8 +352,9 @@ https://learngitbranching.js.org/
     - Grows with your project
   - Professional work that's easy to scale and to recover
 
-&nbsp;
-
+- Minimal effort for maximum reward
+  - A slight adjustment to thinking and habits for all of the above
+- Start simple, experiment, see tutorials and games for deeper understanding
 - Whether you're writing code, papers, or setting up experimental workflows, Git will make your work more robust and future-proof
 
 :::
