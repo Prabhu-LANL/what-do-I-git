@@ -24,7 +24,7 @@ First let's imagine
 Now let's see
 
 - Why git is important
-- Why you should use it
+- Why we should use it
 - How easily you can start
 :::
 ::: column
