@@ -10,7 +10,7 @@ date: today
 :::: columns
 ::: column
 
-Imagine
+First let's imagine
 
 - A laboratory notebook whose pages can come alive to
 - Move forward and backward in time
@@ -21,36 +21,46 @@ Imagine
 - Invite you to experiment without negative consequences
 - Duplicate itself just for you
 
-See
+&nbsp;
 
-- Why git is important
-- Why you should use it
+Now let's see
+
+- Why Git is important
+- Why we should use it
 - How easily you can start
 :::
 ::: column
 ![A scientific Integrity Tool](docs/images/laboratory_notebook_integrity.png)
 :::
 ::::
+::: notes
+Git is not just a software development tool, it is a scientific integrity tool
+:::
 
 <!-- slide 3 -->
 # Git is powerful (and so can you!) {layout="Two Content"}
 :::: columns
 ::: column
 
-- Git = Reproducibility + Safety + Collaboration
-  - Scientific and Engineering integrity require Reproducibility and Traceability
+Git = 
 
 &nbsp;
 
-- Safety and Collaboration
-  - Experimentation through branching encourages innovation
-  - Collaboration without Chaos – multiple people, but one clean history
+Reproducibility +
+Traceability&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+
+Safety&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+
+Collaboration&nbsp;&nbsp;&nbsp;+
+Scalability&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+
+Recoverability&nbsp;&nbsp;+
+Professionalism
 
 &nbsp;
 
-- Professional work
-  - Debugging and Recovery – Find problems faster
-  - Easy Scalability
+= Important concepts in Science and Engineering
+
+&nbsp;
+
+= Nice things we can all have
 :::
 ::: column
 ![You - an hour from now](docs/images/wizards.png)
@@ -58,25 +68,25 @@ See
 ::::
 
 <!-- slide 4 -->
-# Reproducibility, Safety, Collaboration {layout="Two Content"}
+# Reproducibility and Traceability {layout="Two Content"}
 :::: columns
 ::: column
 
+Scientific and Engineering integrity require
+
+&nbsp;
+
 - &#128220; Complete history of every change
-- &#128300; Reproducible results
-- &#129514; Safe experimentation with branches
-- &#129309; Parallel collaboration without overwrites
-- &#128524; Recovery from mistakes 
-- &#9989; Scientific and Engineering integrity require
-  - Reproducibility and Traceability
-  - Recreate exact results from any past version
-  - Identify which code produced which figure
-  - See who changed what and why
+  - Traceability
+      - See who changed what and why
   - Maintain long-term project memory
-- &#128683; Before git
-  - Analysis_final_v7_for_real_20260305.py
-- &#128077; With git
-  - clear, time-stamped, documented revisions
+    - Past and current collaborators, files, struggles, reasoning, etc.
+
+&nbsp;
+
+- &#128300; Reproducible results
+  - Recreate exact results from any past version
+    - Identify which code produced which figure, report, calculations, etc.
 :::
 ::: column
 ![](docs/images/reproducibility.png)
@@ -87,20 +97,18 @@ See
 # Safety and Collaboration {layout="Two Content"}
 :::: columns
 ::: column
-- Experimentation through branching encourages innovation
-  - Try new algorithms safely
-  - Explore alternate models
-  - Test parameter changes
-  - Prototype without risk
-  - If failure:
+- &#129514; Safe experimentation through branching encourages innovation
+  - Try new algorithms safely, explore alternate models, test parameter changes, etc.
+  - Prototype without risk. If failure:
     - Switch back instantly with no damage to stable work
-      - Removes fear of breaking things
-- Collaborate without chaos – multiple people, but one clean history
-  - Work in parallel
+      - Remove fear of breaking things
+- &#x1F91D; Collaborate without chaos – multiple people, but one clean history
+  - Parallel collaboration without overwrites
   - Merge changes intelligently
   - Detect and resolve conflicts cleanly
   - Avoid email attachments, shared drives, file name versioning, manual merge errors
-
+    - &#128683; Before Git - Analysis_final_v7_for_real_20260305.py
+    - &#128077; With Git - clear, time-stamped, documented revisions
 :::
 ::: column
 ![](docs/images/safety.png)
@@ -111,7 +119,7 @@ See
 # Professional Work {layout="Two Content"}
 :::: columns
 ::: column
-- Debugging and recovery
+- &#128524; Debugging and recovery
   - Find problems faster
     - Small logical commits
     - Precise change tracking
@@ -119,11 +127,11 @@ See
   - Revert to known good states
   - Git makes debugging scientific
   - Never debug the same problem again!
-- Easy scalability
+- &#x1F4C8; Easy scalability
   - Solo grad student &rarr; Multi-institution collaboration
   - Single script &rarr; Full simulation framework
   - Short experiment &rarr; Decades long program
-- Git is industry standard
+- &#9989; Git is industry standard
   - Essential to software engineering
   - Increasingly expected for broader scientific and engineering work
 
@@ -145,7 +153,7 @@ See
 
 &nbsp;
 
-- Documents (html/markdown/LaTeX/etc.) + version control
+- Documents (html/markdown/LaTeX/etc.) version control
   - Reports, grant proposals, lab manuals, manuscripts
 
 &nbsp;
@@ -156,7 +164,7 @@ See
 &nbsp;
 
 - Simulations
-  - Keep track of model versions, parameters, and results
+  - Keep track of model versions, parameters, inputs, and results
 :::
 ::: column
 ![](docs/images/LaTeX.png)
@@ -164,22 +172,22 @@ See
 ::::
 
 <!-- slide 8 -->
-# What NOT to put in git {layout="Two Content"}
+# What NOT to put in Git {layout="Two Content"}
 :::: columns
 ::: column
 - Large binary files
   - Git's Strength is in line-based diffs
   - Git uses a line-by-line comparison system to track changes between file versions. This works great for:
-    - Code (.py, .c, .tex, .md, etc.)
-    - Configuration files (.yaml, .json)
-    - Documentation in plain text formats\
+    - Code (.py, .c, .cpp, etc.)
+    - Configuration files (.yaml, .json, etc.)
+    - Documentation in plain text formats (.html, .tex, .md, etc.)
   - Binary files, however, are stored as sequences of bytes that do not have clear line breaks. Git:
-    - Cannot show meaningful differences when you run git diff
+    - Cannot show meaningful differences when you run `git diff`
     - Treats each version of a binary file as entirely new, even for small changes
 
 &nbsp;
 
-- Use .gitignore to ignore common binary file extensions (e.g. *.png)
+- Use .gitignore to ignore common binary file extensions (e.g. *.so)
 :::
 ::: column
 ![](docs/images/binary_data.png)
@@ -190,7 +198,7 @@ Small binary files are fine, they will simply be replaced when they are changed
 :::
 
 <!-- slide 9 -->
-# So what is git? {layout="Two Content"}
+# So what is Git? {layout="Two Content"}
 :::: columns
 ::: column
 It's not just a software development tool, it is a ...
@@ -221,7 +229,7 @@ A scientific integrity tool
 
 ::: notes
 The binder is a repository, the paper is a file, the box is the staging area
-the notebook is the git log with a new entry after the paper has been added
+the notebook is the Git log with a new entry after the paper has been added
 back into the binder
 :::
 
@@ -288,8 +296,8 @@ back into the binder
   - If applied, this commit will...
 - Backup to remote
   - Use GitHub or GitLab to avoid local data loss
-- Check out software carpentry’s git lessons
-- Check out visual learning tools (oh my git, learn git branching, etc.)
+- Check out software carpentry’s Git lessons
+- Check out visual learning tools (oh my Git, learn Git branching, etc.)
 
 :::
 ::: column
