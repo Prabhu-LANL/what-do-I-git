@@ -46,7 +46,7 @@ $ git status
 \
 $ sed -i 's/Git out of it/get out of Git/g' git_out_of_it.md
 $ git status
-$ git add git_out_of_it
+$ git add git_out_of_it.md
 $ git status
 :::
 ::: column
