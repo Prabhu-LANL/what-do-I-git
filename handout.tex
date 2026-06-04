@@ -1,0 +1,64 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{pgffor}
+\pagestyle{empty}
+
+\begin{document}
+
+% Page 1: URL strips
+\begin{multicols}{2}
+\scriptsize
+\setlength{\parindent}{0pt}
+\setstretch{1.15}
+
+\foreach \n in {1,...,74}{
+\url{https://github.com/Prabhu-LANL/what-do-I-git/}
+
+\vspace{0.12in}
+}
+
+\end{multicols}
+
+\newpage
+
+% Page 2: Email address signup sheet
+\begin{center}
+{\LARGE \textbf{Email Address}}
+\end{center}
+
+\vspace{0.25in}
+
+\renewcommand{\arraystretch}{2.2}
+
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+\end{tabular}
+
+\end{document}
