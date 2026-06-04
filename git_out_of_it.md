@@ -220,6 +220,7 @@ Small binary files are fine, they will simply be replaced when they are changed
 
 - Expense
   - Git is free and open-source
+  - Likely to cost you more if you don't use it
 :::
 ::: column
 ![](docs/images/git_cost.png)
