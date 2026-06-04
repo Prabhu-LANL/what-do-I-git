@@ -78,7 +78,7 @@ Scientific and Engineering integrity require
 
 - &#128220; Complete history of every change
   - Traceability
-      - See who changed what and why
+      - See who changed what and why and when
   - Maintain long-term project memory
     - Past and current collaborators, files, struggles, reasoning, etc.
 
@@ -86,7 +86,7 @@ Scientific and Engineering integrity require
 
 - &#128300; Reproducible results
   - Recreate exact results from any past version
-    - Identify which code produced which figure, report, calculations, etc.
+    - Identify which version of the code produced which figure, report, calculations, etc.
 :::
 ::: column
 ![](docs/images/reproducibility.png)
@@ -108,7 +108,7 @@ Scientific and Engineering integrity require
   - Detect and resolve conflicts cleanly
   - Avoid email attachments, shared drives, file name versioning, manual merge errors
     - &#128683; Before Git - Analysis_final_v7_for_real_20260305.py
-    - &#128077; With Git - clear, time-stamped, documented revisions
+    - &#128077; With Git - Anaylsis.py - clear, time-stamped, documented revisions
 :::
 ::: column
 ![](docs/images/safety.png)
