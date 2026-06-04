@@ -86,7 +86,7 @@ For the other markdown files, the commands are essentially the same
       $ pandoc quiz.md -t pptx --reference-doc=template.pptx -o quiz.pptx -f markdown+hard_line_breaks
       $ pandoc practicum.md -t pptx --reference-doc=template.pptx -o practicum.pptx -f markdown+hard_line_breaks
 
-To print the handout
+To convert the handout to a pdf for printing
 
    .. code-block::
 
