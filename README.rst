@@ -31,9 +31,21 @@ A presentation for introducing scientists and engineers to git. This talk is des
 
 There are images, a slide template, and a markdown file for turning the main content into a powerpoint slide deck. The practicum and quiz can also be rendered as a powerpoint slide deck. Additionally there are html renderings of the content so that the talk can be given from a browser if desired.
 
-An abstract is provided to be used when scheduling or otherwise describing the talk.
+An abstract is provided to be used when scheduling or otherwise describing the talk. Likewise a handout is provided, for getting email addresses of attendees and to print the repo URL to be cut into little strips that can be handed out.
 
 .. project-description-end
+
+*****************************
+HTML Rendering of slide decks
+*****************************
+
+.. html-render-start
+
+* `main slides`_
+* `quiz`_
+* `practicum`_
+
+.. html-render-end
 
 ********
 Abstract
@@ -44,30 +56,6 @@ Abstract
 What do I git out of it? This introductory talk provides scientists and engineers with a practical overview of Git and modern version control concepts, focusing on how Git supports reproducibility, collaboration, traceability, and safe experimentation in technical and research environments. Rather than treating Git as a tool only for software developers, the presentation demonstrates how version control can improve workflows for simulations, data analysis, documentation, manuscripts, configuration files, and long-running engineering or scientific projects. Attendees will learn the core ideas behind repositories, commits, staging, branching, merging, and synchronization, along with the most important commands needed to begin using Git effectively. The talk also introduces common collaboration workflows, discusses limitations such as handling binary files, and highlights best practices for organizing changes into meaningful, reproducible project history.
 
 .. abstract-end
-
-Information
-===========
-
-.. project-information-start
-
-There are three markdown files, each of which can be converted to a powerpoint slide deck. One file has the main talk. Another is a short quiz and another is the practicum.
-
-* `Documentation`_: This readme file
-
-To learn git more thoroughly, please visit `Software Carpentry`_'s `git novice`_ lesson. 
-
-For a visual learning tool see `Learn Git Branching`_.
-
-If you'd like to learn by playing a game, visit `Oh My Git`_.
-
-
-.. project-information-end
-
-Author Info
-===========
-
-* `Prabhu Khalsa`_
-
 
 ***********
 Quick Start
@@ -98,17 +86,29 @@ For the other markdown files, the commands are essentially the same
       $ pandoc quiz.md -t pptx --reference-doc=template.pptx -o quiz.pptx -f markdown+hard_line_breaks
       $ pandoc practicum.md -t pptx --reference-doc=template.pptx -o practicum.pptx -f markdown+hard_line_breaks
 
+To print the handout
+
+   .. code-block::
+
+      $ pdflatex handout.tex
 
 .. quick-start-end
 
-*****************************
-HTML Rendering of slide decks
-*****************************
+More Information
+================
 
-.. html-render-start
+.. project-information-start
 
-* `main slides`_
-* `quiz`_
-* `practicum`_
+To learn git more thoroughly, please visit `Software Carpentry`_'s `git novice`_ lesson. 
 
-.. html-render-end
+For a visual learning tool see `Learn Git Branching`_.
+
+If you'd like to learn by playing a game, visit `Oh My Git`_.
+
+.. project-information-end
+
+Author Info
+===========
+
+* `Prabhu Khalsa`_
+
