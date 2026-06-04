@@ -53,8 +53,8 @@ There are three markdown files, each of which can be converted to a powerpoint s
 
 * `Documentation`_: This readme file
 
-To learn git more thoroughly, please visit `Software Carpentry`_'s `git novice`_ lesson.<br>
-For a visual learning tool see `Learn Git Branching`_. <br>
+To learn git more thoroughly, please visit `Software Carpentry`_'s `git novice`_ lesson. |
+For a visual learning tool see `Learn Git Branching`_.  |
 If you'd like to learn by playing a game, visit `Oh My Git`_.
 
 
