@@ -26,7 +26,7 @@ Project Description
 
 .. project-description-start
 
-A presentation for introducing scientists and engineers to git. This talk is designed to be given with a short practicum and meant to be done all in under an hour.
+A presentation for introducing scientists and engineers to git. This talk is designed to be given with a short quiz and a short practicum and meant to be done all in under an hour.
 
 There are images, a slide template, and a markdown file for turning the main content into a powerpoint slide deck. The practicum and quiz can also be rendered as a powerpoint slide deck. Additionally there are html renderings of the content so that the talk can be given from a browser if desired.
 
@@ -49,12 +49,12 @@ Information
 
 .. project-information-start
 
-There are two markdown files, each of which can be converted to a powerpoint slide deck. One file has the main talk. Another is a short quiz.
+There are three markdown files, each of which can be converted to a powerpoint slide deck. One file has the main talk. Another is a short quiz and another is the practicum.
 
 * `Documentation`_: This readme file
 
-To learn git more thoroughly, please visit `Software Carpentry`_'s `git novice`_ lesson.
-For a visual learning tool see `Learn Git Branching`_.
+To learn git more thoroughly, please visit `Software Carpentry`_'s `git novice`_ lesson.\
+For a visual learning tool see `Learn Git Branching`_.\
 If you'd like to learn by playing a game, visit `Oh My Git`_.
 
 
