@@ -16,13 +16,12 @@ date: today
 
 Assuming you use a computer, you, or someone you know, may have dealt with:
 
-- Lost files
-- Accidentally deleted files
-- Changes that you want to undo, but can't remember the "better" way you had it before
-- Changes made by unknown "collaborators" (or saboteurs?)
-- Changes made by accident (cat walked across your keyboard)
-- Made a copy, but now don't remember which is the original
-- Worked on an old copy when you meant to work on the latest updates
+&nbsp;
+
+- Lost or accidentally deleted files
+- A change you made, where you can't remember the "better" way you had it before
+- A change made by unknown "collaborators" (saboteurs?), or made by accident
+- Work done on an old copy without the latest updates, or an inability to distinguish the latest copy
 
 :::
 ::: column
@@ -30,7 +29,8 @@ Assuming you use a computer, you, or someone you know, may have dealt with:
 :::
 ::::
 ::: notes
-Git is not just a software development tool, it is a scientific integrity tool
+Someone you know (wink, wink)
+Changes made by accident: Maybe a cat walked across your keyboard?
 Source for quote: https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
 :::
 
