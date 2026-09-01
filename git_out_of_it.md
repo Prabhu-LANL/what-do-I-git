@@ -6,35 +6,6 @@ date: today
 ---
 
 <!-- slide 2 -->
-# What is version control, and why should you care? {layout="Two Content"}
-:::: columns
-::: column
-
-"Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later."
-
-&nbsp;
-
-Assuming you use a computer, you, or someone you know, may have dealt with:
-
-&nbsp;
-
-- Lost or accidentally deleted files
-- A change you made, where you can't remember the "better" way you had it before
-- A change made by unknown "collaborators" (saboteurs?), or made by accident
-- Work done on an old copy without the latest updates, or an inability to distinguish the latest copy
-
-:::
-::: column
-![Less Chaos. More Clarity](docs/images/chaos_to_clarity.png)
-:::
-::::
-::: notes
-Someone you know (wink, wink)
-Changes made by accident: Maybe a cat walked across your keyboard?
-Source for quote: https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
-:::
-
-<!-- slide 3 -->
 # Why Git? {layout="Two Content"}
 :::: columns
 ::: column
@@ -64,6 +35,35 @@ Now let's see
 ::::
 ::: notes
 Git is not just a software development tool, it is a scientific integrity tool
+:::
+
+<!-- slide 3 -->
+# What is version control, and why should you care? {layout="Two Content"}
+:::: columns
+::: column
+
+"Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later."
+
+&nbsp;
+
+Assuming you use a computer, you, or someone you know, may have dealt with:
+
+&nbsp;
+
+- Lost or accidentally deleted files
+- A change you made, where you can't remember the "better" way you had it before
+- A change made by unknown "collaborators" (saboteurs?), or made by accident
+- Work done on an old copy without the latest updates, or an inability to distinguish the latest copy
+
+:::
+::: column
+![Less Chaos. More Clarity](docs/images/chaos_to_clarity.png)
+:::
+::::
+::: notes
+Someone you know (wink, wink)
+Changes made by accident: Maybe a cat walked across your keyboard?
+Source for quote: https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
 :::
 
 <!-- slide 4 -->
