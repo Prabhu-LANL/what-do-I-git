@@ -38,6 +38,35 @@ Git is not just a software development tool, it is a scientific integrity tool
 :::
 
 <!-- slide 3 -->
+# What is version control, and why should you care? {layout="Two Content"}
+:::: columns
+::: column
+
+"Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later."
+
+&nbsp;
+
+Assuming you use a computer, you, or someone you know, may have dealt with:
+
+&nbsp;
+
+- Lost or accidentally deleted files
+- A change you made, where you can't remember the "better" way you had it before
+- A change made by unknown "collaborators" (saboteurs?), or made by accident
+- Work done on an old copy without the latest updates, or an inability to distinguish the latest copy
+
+:::
+::: column
+![Less Chaos. More Clarity](docs/images/chaos_to_clarity.png)
+:::
+::::
+::: notes
+Someone you know (wink, wink)
+Changes made by accident: Maybe a cat walked across your keyboard?
+Source for quote: https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
+:::
+
+<!-- slide 4 -->
 # Git is powerful (and so can you!) {layout="Two Content"}
 :::: columns
 ::: column
@@ -67,7 +96,7 @@ Professionalism
 :::
 ::::
 
-<!-- slide 4 -->
+<!-- slide 5 -->
 # Reproducibility and Traceability {layout="Two Content"}
 :::: columns
 ::: column
@@ -93,7 +122,7 @@ Scientific and Engineering integrity require
 :::
 ::::
 
-<!-- slide 5 -->
+<!-- slide 6 -->
 # Safety and Collaboration {layout="Two Content"}
 :::: columns
 ::: column
@@ -115,7 +144,7 @@ Scientific and Engineering integrity require
 :::
 ::::
 
-<!-- slide 6 -->
+<!-- slide 7 -->
 # Professional Work {layout="Two Content"}
 :::: columns
 ::: column
@@ -141,7 +170,7 @@ Scientific and Engineering integrity require
 :::
 ::::
 
-<!-- slide 7 -->
+<!-- slide 8 -->
 # Git beyond code: Applications in Science & Engineering {layout="Two Content"}
 :::: columns
 ::: column
@@ -172,7 +201,7 @@ Scientific and Engineering integrity require
 ::::
 
 
-<!-- slide 8 -->
+<!-- slide 9 -->
 # What NOT to put in Git {layout="Two Content"}
 :::: columns
 ::: column
@@ -198,7 +227,7 @@ Scientific and Engineering integrity require
 Small binary files are fine, they will simply be replaced when they are changed
 :::
 
-<!-- slide 9 -->
+<!-- slide 10 -->
 # What does it cost me to Git these benefits? {layout="Two Content"}
 :::: columns
 ::: column
@@ -227,7 +256,7 @@ Small binary files are fine, they will simply be replaced when they are changed
 :::
 ::::
 
-<!-- slide 10 -->
+<!-- slide 11 -->
 # So what is Git? {layout="Two Content"}
 :::: columns
 ::: column
@@ -241,7 +270,7 @@ It's not just a software development tool, it is a ...
 A scientific integrity tool
 :::
 
-<!-- slide 11 -->
+<!-- slide 12 -->
 # Key Git Concepts {layout="Two Content"}
 :::: columns
 ::: column
@@ -263,7 +292,7 @@ the notebook is the Git log with a new entry after the paper has been added
 back into the binder
 :::
 
-<!-- slide 12 -->
+<!-- slide 13 -->
 # Essential Git Commands {layout="Title and Content"}
 | Action          | Command                   | Description                         |
 |:----------------|:--------------------------|:------------------------------------|
@@ -280,7 +309,7 @@ back into the binder
 | Pull updates    | *git pull*                | Download updates from remote repo   |
 
 
-<!-- slide 13 -->
+<!-- slide 14 -->
 # Typical workflow in collaborative project {layout="Content with Caption"}
 
 - Clone Repository - brings the repository into your working directory
@@ -292,7 +321,7 @@ back into the binder
 
 ![](docs/images/branching.png)
 
-<!-- slide 14 -->
+<!-- slide 15 -->
 # Beyond the command line {layout="Two Content"}
 :::: columns
 ::: column
@@ -310,7 +339,7 @@ back into the binder
 :::
 ::::
 
-<!-- slide 15 -->
+<!-- slide 16 -->
 # Tips for adopting Git in scientific work {layout="Two Content"}
 :::: columns
 ::: column
@@ -340,7 +369,7 @@ https://ohmygit.org/
 https://learngitbranching.js.org/
 :::
 
-<!-- slide 16 -->
+<!-- slide 17 -->
 # Conclusion {layout="Two Content"}
 :::: columns
 ::: column
